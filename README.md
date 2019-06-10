@@ -1,12 +1,4 @@
-# 👩‍💻 Automator of Things 👨‍💻
-
-We are **Automators of Things**, an aggregation of articles about automating... <br />
-&nbsp;  🗃 servers ⚙️ <br />
-&nbsp;  📈 services 📡 <br />
-&nbsp;  🔐 security ⚔️ <br />
-&nbsp;  ⏰ tasks 🧺 <br />
-&nbsp;  🧵 processes ⛓ <br />
-&nbsp;  🦚 **anything worth automating!** 🆒
+We are **Automators of Things**, an aggregation of articles about automating systems
   
 ## Articles
 
