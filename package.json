@@ -17,7 +17,7 @@
     "yarn": "^1.17.3"
   },
   "scripts": {
-    "build": "yarn clean && yarn build:sass && yarn build:html",
+    "build": "yarn clean && yarn build:sass && yarn build:html && yarn build:static",
     "build:html": "js-yaml src/config.yml | mustache - src/index.mustache.html dist/index.html",
     "build:scss": "yarn clean:scss && sass src/scss/styles.scss dist/css/styles.css",
     "build:static": "cp -R static/* dist",
