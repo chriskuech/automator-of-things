@@ -1,0 +1,32 @@
+{
+  "name": "automator-of-things",
+  "version": "1.0.0",
+  "description": "Articles written by Chris Kuech",
+  "repository": "https://github.com/chriskuech/automator-of-things.git",
+  "author": "Chris Kuech <cjkuech@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0",
+    "bootstrap": "^4.3.1",
+    "concurrently": "^4.1.1",
+    "js-yaml": "^3.13.1",
+    "mustache": "^3.0.1",
+    "nodemon": "^1.19.1",
+    "npm-watch": "^0.6.0",
+    "sass": "^1.22.7",
+    "yarn": "^1.17.3"
+  },
+  "scripts": {
+    "build": "yarn clean && yarn build:sass && yarn build:html",
+    "build:html": "js-yaml src/config.yml | mustache - src/index.mustache.html dist/index.html",
+    "build:scss": "yarn clean:scss && sass src/scss/styles.scss dist/css/styles.css",
+    "build:static": "cp -R static/* dist",
+    "watch": "yarn clean && concurrently -n w: yarn:watch:*",
+    "watch:html": "nodemon --watch src --ext mustache,html,yml,yaml --exec 'yarn build:html'",
+    "watch:scss": "nodemon --watch src --ext scss --exec 'yarn build:scss'",
+    "watch:static": "nodemon --watch static --exec 'yarn build:static'",
+    "clean": "rm -rf dist/*",
+    "clean:html": "rm -rf dist/*.html",
+    "clean:scss": "rm -rf dist/css"
+  }
+}

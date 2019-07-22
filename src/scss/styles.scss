@@ -1,0 +1,251 @@
+
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Yantramanav&display=swap');
+@import "./fontawesome/fontawesome.scss";
+@import "./fontawesome/solid.scss";
+
+$purple: rgb(197, 134, 192);
+$yellow: rgb(220, 220, 170);
+$orange: rgb(206, 145, 120);
+$dark-blue: rgb(86, 156, 214);
+$light-blue: rgb(156, 220, 254);
+$green: rgb(78, 201, 176);
+
+
+html, body, #root {
+  @extend .content-font;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-image: url('../img/logo.png');
+  background-size: cover;
+}
+
+.display-font {
+  font-family: 'Alfa Slab One', serif;
+}
+
+.content-font {
+  font-family: 'Yantramanav', sans-serif;
+}
+
+.text-overlay {
+  display: block;
+}
+
+.text-overlay-transparent {
+  @extend .text-overlay;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.text-overlay-solid {
+  @extend .text-overlay;
+  background: rgba(0, 0, 0, 1);
+}
+
+.image-text {
+  background-image: url('../img/logo.png');
+  overflow: hidden;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+
+  .logo-container {
+    display: block;
+    text-align: right;
+    max-width: 600px;
+
+    .logo {
+      @include fa-icon;
+      @extend .fas;
+      
+      &:before {
+        content: fa-content($fa-var-cogs);
+      }
+      transform: rotate(195deg);
+      font-size: 100px;
+      font-weight: 900;
+      color: black;
+      margin-right: 0.4em;
+    }
+  }
+
+  .title {
+    display: inline-block;
+    vertical-align: text-top;
+    max-width: 600px;
+
+    .text {
+      @extend .image-text;
+      font-size: 80px;
+      text-align: right;
+
+      small {
+        font-size: 0.5em;
+        text-decoration: underline;
+        vertical-align: text-top;
+      }
+    }
+  }
+
+  .subtitle {
+    font-size: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    text-decoration: none;
+    color: inherit;
+    max-width: 600px;
+    margin: 30px auto;
+
+    img {
+      border-radius: 50%;
+      transition: height 0.3s, margin 0.3s;
+    }
+
+    .text {
+      margin-left: 8px;
+      .title {
+        @extend .display-font;
+        transition: color 0.3s;
+      }
+      .fake-link {
+        transition: text-decoration 0.3s;
+      }
+    }
+
+    &:link {
+      img {
+        height: 74px;
+        margin: 2px;
+      }
+      .fake-link {
+        text-align: right;
+        font-style: italic;
+      }
+      // .title {
+      //   color: $dark-blue;
+      // }
+    }
+
+    &:hover {
+      img {
+        height: 78px;
+        margin: 0;
+      }
+      .fake-link {
+        text-decoration: underline;
+      }
+      // .title {
+      //   color: $light-blue;
+      // }
+    }
+  }
+
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+  .featured {
+    grid-column: auto / span 2;
+  }
+
+  .post {
+    text-decoration: none;
+    height: 400px;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    color: $dark-blue;
+
+    &:link {
+      .text, .tag {
+        @extend .text-overlay-transparent;
+      }
+    }
+
+    &:hover {
+      .text, .tag {
+        @extend .text-overlay-solid;
+      }
+      .featured .tag {
+        padding-left: 1.3em;
+      }
+      .tag {
+        padding-right: 1.3em;
+      }
+      .text {
+        padding-bottom: 1.3em;
+      }
+    }
+
+    &.featured {
+      color: $orange;
+    }
+
+    .featured .tag {
+      float: left;
+      font-size: 1.7em;
+      transition: padding-left 0.3s;
+    }
+
+    .tag {
+      float: right;
+      padding: 0.3em 0.7em;
+      font-style: italic;
+      transition: padding-right 0.3s;
+    }
+
+    .text {
+      align-self: end;
+      position: absolute;
+      bottom: 0;
+      padding: 0.3em 0.7em;
+      transition: padding-bottom 0.3s, background-color 0.3s;
+
+      .title {
+        font-size: 1.7em;
+        font-weight: 900;
+      }
+    }
+
+  }
+}
+
+@media (min-width: 1200px) {
+  #root {
+    display: flex;
+    header {
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      .push {
+        flex-grow: 1;
+      }
+    }
+    main {
+      flex-grow: 1;
+      overflow: scroll;
+      height: 100%;
+    }
+  }
+}

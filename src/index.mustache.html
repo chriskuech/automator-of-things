@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<htmL>
+
+<head>
+  <meta name="viewport" content="width=800px">
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="shortcut icon" href="./img/logo.png" />
+</head>
+
+<body>
+
+  <div id="root">
+
+    <header>
+      <div class="push"></div>
+      <div>
+        <div class="title">
+          <div class="logo-container">
+            <div class="logo"></div>
+          </div>
+          <div class="text">
+            <span class="display-font">
+              Automator<br />
+              <small>of</small>
+              Things
+            </span>
+          </div>
+        </div>
+        <div class="subtitle">
+          {{header.subtitle}}
+        </div>
+        <a class="profile" href="https://chriskuech.com/">
+          <img src="./img/profile.jpeg" />
+          <div class="text">
+            <div class="title">{{header.about.title}}</div>
+            <div class="description">{{header.about.description}}</div>
+            <div class="fake-link">Learn more &raquo;</div>
+          </div>
+        </a>
+        <div>&copy;
+          <script>document.write(new Date().getFullYear())</script> Chris Kuech. All rights reserved.</div>
+      </div>
+    </header>
+
+    <main>
+      <a class="post featured" href="{{featured.href}}" style="background-image: url({{featured.src}});"
+        target="_blank">
+        <div class="featured">
+          <span class="tag">Featured</span>
+        </div>
+        <div class="tags">
+          {{#featured.tags}}
+          <span class="tag">{{.}}</span>
+          {{/featured.tags}}
+        </div>
+        <div class="text">
+          <span class="title">{{featured.title}}</span><br />
+          <span class="description">{{featured.description}}</span>
+        </div>
+      </a>
+      {{#posts}}
+      <a class="post" href="{{href}}" style="background-image: url({{src}});" target="_blank">
+        <div class="tags">
+          {{#tags}}
+          <span class="tag">{{.}}</span>
+          {{/tags}}
+        </div>
+        <div class="text">
+          <span class="title">{{title}}</span><br />
+          <span class="description">{{description}}</span>
+        </div>
+      </a>
+      {{/posts}}
+    </main>
+
+  </div>
+
+  <script>
+    function updateFilter(tags) {
+      $(".post")
+        .show()
+        .filter(function () {
+          $(this)
+            .find(".tag")
+            .filter(function () { return !~tags.indexOf($(this).text()) })
+            .hide();
+        });
+    }
+    $(function () {
+      $(".tag").click(function () {
+        updateFilter([$(this).text()]);
+      });
+    });
+  </script>
+</body>
+
+</htmL>
