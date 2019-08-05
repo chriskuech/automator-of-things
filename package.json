@@ -6,7 +6,6 @@
   "author": "Chris Kuech <cjkuech@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.9.0",
     "bootstrap": "^4.3.1",
     "concurrently": "^4.1.1",
     "js-yaml": "^3.13.1",

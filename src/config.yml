@@ -1,14 +1,81 @@
 
----
-  header:
-    subtitle: |
-      A collection of articles about applying Dev concepts to Operational systems, mostly inspired from my time on the Microsoft.com SRE team.
-    about:
-      title: About the Author
-      description: |
-        Chris Kuech is a former DevOps Engineer at Microsoft and current DevOps Consultant.
-  featured:
-    title: Declarative DevOps Microframeworks
+header:
+  subtitle: |
+    A collection of articles about applying Dev concepts to Operational systems, mostly inspired from my time on the Microsoft.com SRE team.
+  about:
+    title: About the Author
+    description: |
+      Chris Kuech is a former DevOps Engineer at Microsoft and current DevOps Consultant.
+    href: https://www.linkedin.com/in/chriskuech/
+featured:
+  title: Declarative DevOps Microframeworks
+  href: |
+    https://medium.com/@cjkuech/declarative-devops-microframeworks-9908c8d05332?source=friends_link&sk=4e361c6020912fb160e626994a6e5184
+  src: https://miro.medium.com/max/700/1*zNBy1zL3OXhmGcWm1Q2jMw.png
+  description: |
+    Declarative DevOps Microframeworks is the most robust, portable, and scalable pattern for managing your DevOps systems with less code. This series will help you understand the concepts behind Declarative DevOps Microframeworks, then walk you through implementing some common use cases in the most DevOps-friendly language: PowerShell.
+  tags:
+    - PowerShell
+    - DevOps
+    - Maintainability
+    - Series
+posts:
+  - title: Defensive PowerShell with Validation Attributes
+    href: |
+      https://itnext.io/defensive-powershell-with-validation-attributes-8e7303e179fd?source=friends_link&sk=14765ca9554709a77f8af7d73612ef5b
+    src: https://miro.medium.com/max/700/1*RFKCcl_k9XidtG15WZJIgA.png
+    description: |
+      Identify malicious input early, often, and easily with Validation Attributes.
+    tags:
+      - Security
+      - Maintainability
+      - PowerShell
+  - title: Writing Maintainable PowerShell
+    href: |
+      https://itnext.io/writing-maintainable-powershell-503e5b680ed9?source=friends_link&sk=cb9d5774841a296904560f3e834776c1
+    src: https://miro.medium.com/max/700/1*Z6H48s1Qxy2Inw_mLfmmOw.jpeg
+    description: |
+      The MVC design pattern keeps large user-facing applications maintainable with strict separation of concerns.  We can adapt the same pattern to make our PowerShell DevOps code more maintainable.
+    tags:
+      - Maintainability
+      - PowerShell
+  - title: Functional Programming in PowerShell
+    href: |
+      https://medium.com/swlh/functional-programming-in-powershell-876edde1aadb?source=friends_link&sk=e684adbee39b5c936e44e59a1126f4eb
+    src: https://miro.medium.com/max/700/1*1BnG6d85EIKlzk80-He7QA.jpeg
+    description: |
+      Functional Programming is a paradigm partially supported by PowerShell.  Understand the concepts and value of this paradigm, and learn to write idiomatic PowerShell using these patterns.
+    tags:
+      - PowerShell
+      - Fundamentals
+  - title: Deep Equality with Pester
+    href: |
+      https://medium.com/swlh/deep-equality-with-pester-a9a00c3cd8a1?source=friends_link&sk=2013644007cecad8a8f667686c4f870e
+    src: https://miro.medium.com/max/700/1*8F64T9PBPSCurUB3l1zbgw.jpeg
+    description: |
+      Pester does not support deep equality testing in its assertion library.  This tutorial explains recursive functions and the various types of equality in PowerShell, as it walks you through writing your own deep equality function for use with Pester.
+    tags:
+      - PowerShell
+      - Fundamentals
+  - title: Functional PowerShell with Classes
+    href: |
+      https://medium.com/faun/functional-powershell-with-classes-820c8e9acd8f?source=friends_link&sk=9570a8944584ba79819dd755954b7534
+    src: https://miro.medium.com/max/582/1*ttXoyKLu39Is244BNz3Gwg.png
+    description: |
+      Classes are associated with Object-Oriented Programming and rarely associated with Functional Programming.  This guide shows you how to leverage PowerShell classes while keeping your code functional.
+    tags:
+      - PowerShell
+      - Fundamentals
+  - title: New to PowerShell? Use Classes
+    href: |
+      https://itnext.io/new-to-powershell-use-classes-ab7b1e6f72ec?source=friends_link&sk=818e1447e59e377d5d37f641aade3d9d
+    src: https://miro.medium.com/max/700/1*qWqnobCV6iJx2IckfQctDg.png
+    description: |
+      New PowerShell developers can use classes to minimize PowerShell's learning curve.
+    tags:
+      - PowerShell
+      - Fundamentals
+  - title: Declarative DevOps Microframeworks
     href: |
       https://medium.com/@cjkuech/declarative-devops-microframeworks-9908c8d05332?source=friends_link&sk=4e361c6020912fb160e626994a6e5184
     src: https://miro.medium.com/max/700/1*zNBy1zL3OXhmGcWm1Q2jMw.png
@@ -19,126 +86,59 @@
       - DevOps
       - Maintainability
       - Series
-  posts:
-    - title: Defensive PowerShell with Validation Attributes
-      href: |
-        https://itnext.io/defensive-powershell-with-validation-attributes-8e7303e179fd?source=friends_link&sk=14765ca9554709a77f8af7d73612ef5b
-      src: https://miro.medium.com/max/700/1*RFKCcl_k9XidtG15WZJIgA.png
-      description: |
-        Identify malicious input early, often, and easily with Validation Attributes.
-      tags:
-        - Security
-        - Maintainability
-        - PowerShell
-    - title: Writing Maintainable PowerShell
-      href: |
-        https://itnext.io/writing-maintainable-powershell-503e5b680ed9?source=friends_link&sk=cb9d5774841a296904560f3e834776c1
-      src: https://miro.medium.com/max/700/1*Z6H48s1Qxy2Inw_mLfmmOw.jpeg
-      description: |
-        The MVC design pattern keeps large user-facing applications maintainable with strict separation of concerns.  We can adapt the same pattern to make our PowerShell DevOps code more maintainable.
-      tags:
-        - Maintainability
-        - PowerShell
-    - title: Functional Programming in PowerShell
-      href: |
-        https://medium.com/swlh/functional-programming-in-powershell-876edde1aadb?source=friends_link&sk=e684adbee39b5c936e44e59a1126f4eb
-      src: https://miro.medium.com/max/700/1*1BnG6d85EIKlzk80-He7QA.jpeg
-      description: |
-        Functional Programming is a paradigm partially supported by PowerShell.  Understand the concepts and value of this paradigm, and learn to write idiomatic PowerShell using these patterns.
-      tags:
-        - PowerShell
-        - Fundamentals
-    - title: Deep Equality with Pester
-      href: |
-        https://medium.com/swlh/deep-equality-with-pester-a9a00c3cd8a1?source=friends_link&sk=2013644007cecad8a8f667686c4f870e
-      src: https://miro.medium.com/max/700/1*8F64T9PBPSCurUB3l1zbgw.jpeg
-      description: |
-        Pester does not support deep equality testing in its assertion library.  This tutorial explains recursive functions and the various types of equality in PowerShell, as it walks you through writing your own deep equality function for use with Pester.
-      tags:
-        - PowerShell
-        - Fundamentals
-    - title: Functional PowerShell with Classes
-      href: |
-        https://medium.com/faun/functional-powershell-with-classes-820c8e9acd8f?source=friends_link&sk=9570a8944584ba79819dd755954b7534
-      src: https://miro.medium.com/max/582/1*ttXoyKLu39Is244BNz3Gwg.png
-      description: |
-        Classes are associated with Object-Oriented Programming and rarely associated with Functional Programming.  This guide shows you how to leverage PowerShell classes while keeping your code functional.
-      tags:
-        - PowerShell
-        - Fundamentals
-    - title: New to PowerShell? Use Classes
-      href: |
-        https://itnext.io/new-to-powershell-use-classes-ab7b1e6f72ec?source=friends_link&sk=818e1447e59e377d5d37f641aade3d9d
-      src: https://miro.medium.com/max/700/1*qWqnobCV6iJx2IckfQctDg.png
-      description: |
-        New PowerShell developers can use classes to minimize PowerShell's learning curve.
-      tags:
-        - PowerShell
-        - Fundamentals
-    - title: Declarative DevOps Microframeworks
-      href: |
-        https://medium.com/@cjkuech/declarative-devops-microframeworks-9908c8d05332?source=friends_link&sk=4e361c6020912fb160e626994a6e5184
-      src: https://miro.medium.com/max/700/1*zNBy1zL3OXhmGcWm1Q2jMw.png
-      description: |
-        Declarative DevOps Microframeworks is the most robust, portable, and scalable pattern for managing your DevOps systems with less code. This series will help you understand the concepts behind Declarative DevOps Microframeworks, then walk you through implementing some common use cases in the most DevOps-friendly language: PowerShell.
-      tags:
-        - PowerShell
-        - DevOps
-        - Maintainability
-        - Series
-    - title: Declarative DevOps
-      href: |
-        https://itnext.io/declarative-devops-30788ddd43cd?source=friends_link&sk=f7363f0ff3b3a31059f9a6473e2f949e
-      src: https://miro.medium.com/max/700/1*SDFA4sS4_uJDTR8D0r8_OA.jpeg
-      description: |
-        Declarative DevOps is a rapidly growing trend. Learn how Declarative Programming has influenced DevOps, what constitutes a Declarative config file, and where you can start using Declarative DevOps tools today.
-      tags:
-        - DevOps
-        - Maintainability
-    - title: DevOps Microframeworks
-      href: |
-        https://medium.com/@cjkuech/devops-microframeworks-715b882b979c?source=friends_link&sk=9872eebbc5966c7d31b7f3754303a036
-      src: https://miro.medium.com/max/700/1*oZXmY8cSXYGvImmJe4x2Dg.jpeg
-      description: |
-        Microframeworks are small frameworks that adhere to Separation of Concerns. Rather solving all your problems, a microframework only solves one of your problems, helping you avoid locking yourself into a specific technology. Learn why microframeworks are especially beneficial for DevOps.
-      tags:
-        - DevOps
-        - Maintainability
-    - title: Private PowerShell Modules
-      href: |
-        https://itnext.io/private-powershell-modules-76f51a1bf893?source=friends_link&sk=6091d95285ebfd4df4483cd6e9babee4
-      src: https://miro.medium.com/max/700/0*pGWgRpalBr_v2ZtI
-      description: |
-        PowerShell modules are the easiest way to package and deploy your DevOps Microframeworks. Before you learn how to write your microframeworks, learn how to package and consume them.
-      tags:
-        - PowerShell
-        - Maintainability
-    - title: Declarative Configuration Management
-      href: |
-        https://medium.com/@cjkuech/declarative-config-management-daec4007bb77?source=friends_link&sk=eced0bf506385e79292fc3ae2249776d
-      src: https://miro.medium.com/max/700/1*9P68qIca1VlnlgigAD58lg.jpeg
-      description: |
-        Configuration management can be either extremely difficult or extremely simple. This walkthrough will show you how thoughtfully posing the problem can help you solve configuration management in only a few lines of PowerShell.
-      tags:
-        - PowerShell
-        - Guide
-        - DevOps
-    - title: Declarative Idempotency
-      href: |
-        https://itnext.io/declarative-idempotency-aaa07c6dd9a0?source=friends_link&sk=f0464e8e29525b23aabe766bfb557dd7
-      src: https://miro.medium.com/max/700/0*trL6xWvZvHkxucsM
-      description: |
-        Idempotency is extremely pertinent to DevOps, as errors in DevOps code can easily cause system outages. Idempotency can add a lot of redundant code to your codebase. Learn how to factor out your idempotency code into a Declarative DevOps Microframework.
-      tags:
-        - PowerShell
-        - Guide
-        - DevOps
-    - title: Declarative Work-Item Management
-      href: |
-        https://medium.com/swlh/automating-work-item-management-fd9add6351d0?source=friends_link&sk=5bfb6cd0379fdd489560d194521c4007
-      src: https://miro.medium.com/max/700/0*HmzBGsQb3JnaRH8S
-      description: |
-        Your processes should make your team more agile, not cause daily toil. This guide walks through creating a microframework for declaratively managing work items as code annotations instead of manually updating work items in Azure Boards or Jira.
-      tags:
-        - PowerShell
-        - Guide
+  - title: Declarative DevOps
+    href: |
+      https://itnext.io/declarative-devops-30788ddd43cd?source=friends_link&sk=f7363f0ff3b3a31059f9a6473e2f949e
+    src: https://miro.medium.com/max/700/1*SDFA4sS4_uJDTR8D0r8_OA.jpeg
+    description: |
+      Declarative DevOps is a rapidly growing trend. Learn how Declarative Programming has influenced DevOps, what constitutes a Declarative config file, and where you can start using Declarative DevOps tools today.
+    tags:
+      - DevOps
+      - Maintainability
+  - title: DevOps Microframeworks
+    href: |
+      https://medium.com/@cjkuech/devops-microframeworks-715b882b979c?source=friends_link&sk=9872eebbc5966c7d31b7f3754303a036
+    src: https://miro.medium.com/max/700/1*oZXmY8cSXYGvImmJe4x2Dg.jpeg
+    description: |
+      Microframeworks are small frameworks that adhere to Separation of Concerns. Rather solving all your problems, a microframework only solves one of your problems, helping you avoid locking yourself into a specific technology. Learn why microframeworks are especially beneficial for DevOps.
+    tags:
+      - DevOps
+      - Maintainability
+  - title: Private PowerShell Modules
+    href: |
+      https://itnext.io/private-powershell-modules-76f51a1bf893?source=friends_link&sk=6091d95285ebfd4df4483cd6e9babee4
+    src: https://miro.medium.com/max/700/0*pGWgRpalBr_v2ZtI
+    description: |
+      PowerShell modules are the easiest way to package and deploy your DevOps Microframeworks. Before you learn how to write your microframeworks, learn how to package and consume them.
+    tags:
+      - PowerShell
+      - Maintainability
+  - title: Declarative Configuration Management
+    href: |
+      https://medium.com/@cjkuech/declarative-config-management-daec4007bb77?source=friends_link&sk=eced0bf506385e79292fc3ae2249776d
+    src: https://miro.medium.com/max/700/1*9P68qIca1VlnlgigAD58lg.jpeg
+    description: |
+      Configuration management can be either extremely difficult or extremely simple. This walkthrough will show you how thoughtfully posing the problem can help you solve configuration management in only a few lines of PowerShell.
+    tags:
+      - PowerShell
+      - Guide
+      - DevOps
+  - title: Declarative Idempotency
+    href: |
+      https://itnext.io/declarative-idempotency-aaa07c6dd9a0?source=friends_link&sk=f0464e8e29525b23aabe766bfb557dd7
+    src: https://miro.medium.com/max/700/0*trL6xWvZvHkxucsM
+    description: |
+      Idempotency is extremely pertinent to DevOps, as errors in DevOps code can easily cause system outages. Idempotency can add a lot of redundant code to your codebase. Learn how to factor out your idempotency code into a Declarative DevOps Microframework.
+    tags:
+      - PowerShell
+      - Guide
+      - DevOps
+  - title: Declarative Work-Item Management
+    href: |
+      https://medium.com/swlh/automating-work-item-management-fd9add6351d0?source=friends_link&sk=5bfb6cd0379fdd489560d194521c4007
+    src: https://miro.medium.com/max/700/0*HmzBGsQb3JnaRH8S
+    description: |
+      Your processes should make your team more agile, not cause daily toil. This guide walks through creating a microframework for declaratively managing work items as code annotations instead of manually updating work items in Azure Boards or Jira.
+    tags:
+      - PowerShell
+      - Guide
