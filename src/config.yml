@@ -1,11 +1,11 @@
 
 header:
   subtitle: |
-    A collection of articles about applying Dev concepts to Operational systems, mostly inspired from my time on the Microsoft.com SRE team.
+    A collection of articles about applying Dev concepts to Operational systems.
   about:
     title: About the Author
     description: |
-      Chris Kuech is a former DevOps Engineer at Microsoft and current DevOps Consultant.
+      Chris Kuech is a Software Engineer who has spent the past four years building DevOps platforms at Microsoft. 
     href: https://www.linkedin.com/in/chriskuech/
 featured:
   title: Declarative DevOps Microframeworks
